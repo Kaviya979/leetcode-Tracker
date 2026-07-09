@@ -1,0 +1,13 @@
+// Last updated: 09/07/2026, 15:09:11
+class Solution {
+    public int hammingWeight(int n) {
+       int count=0;
+       while(n!=0){
+       if((n&1)==1){
+        count++;
+       } 
+       n=n>>1;
+  }
+  return count;
+  }
+}
